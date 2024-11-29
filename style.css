@@ -1,0 +1,84 @@
+/* Importar fuente romántica */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+  background: linear-gradient(135deg, #FFC0CB, #FF69B4);
+  font-family: "Dancing Script", cursive;
+  color: #FFFFFF; /* Texto blanco para mejor contraste */
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Encabezados principales */
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombras para mejor legibilidad */
+  margin-bottom: 20px;
+}
+
+/* Índice en filas */
+.indice {
+  display: flex;
+  flex-direction: column; /* Poner los elementos en columna */
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px; /* Espaciado entre filas */
+}
+
+.indice a {
+  text-decoration: none; /* Quitar subrayado */
+  color: #FFFFFF; /* Color inicial del texto */
+  font-size: 1.5em;
+  background-color: rgba(255, 20, 147, 0.7); /* Fondo semitransparente */
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+.indice a:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Cambiar el fondo al pasar el mouse */
+  color: #FF69B4; /* Cambiar el color del texto */
+  transform: scale(1.1); /* Efecto de agrandamiento */
+}
+
+/* Texto decorativo */
+p {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+/* Botones con estilo romántico */
+button {
+  background-color: #FF69B4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #FF1493;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
+}
+
+/* Animación de corazones */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.heart {
+  color: #FF0000;
+  font-size: 3em;
+  animation: heartbeat 1s infinite;
+  margin: 20px 0;
+}
